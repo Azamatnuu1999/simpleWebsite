@@ -1,0 +1,23 @@
+footer{
+    .contain{
+        margin-top: 60px;
+        margin-bottom: 50px;
+        .links{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 30px;
+            width: 200px;
+            margin: 0 auto;
+            padding-left: 0;
+            font-size: 28px;
+            &__bottom{
+                width: 100%;
+                font-size: 13px;
+                text-align: center;
+                a{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.third{
+    .contain{
+        &__p{
+            font-size: 18px;
+        }
+        padding: 20px 0;
+        .main{
+            .card1{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 20px 0;
+                border-bottom: 1px solid #E0E0E0;
+                &__left{
+                    width: 200px;
+                    img{
+                        height: 92%;
+                    }
+                }
+                &__right{
+                    width: calc(100% - 230px);
+                    padding-top: 0;
+                    h3{
+                        font-weight: 600;
+                        margin-top: 0;
+                    }
+                    p{
+                        color: grey;
+                        span{
+                            background-color: black;
+                            color: white;
+                            font-weight: 600;
+                            border-radius: 15px;
+                            padding: 2px 4px 4px 8px;
+                        }
+                    }
+                    .text{
+                        color: black;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .card2{
+                width: 70%;
+                margin: 0 auto;
+                &__right{
+                    p{
+                        color: black;
+                        font-size: 16px;
+                        span{
+                            background-color: #FF6464;
+                            color: white;
+                            font-weight: 600;
+                            border-radius: 15px;
+                            padding: 2px 4px 4px 8px;
+                        }
+                    }
+                    .text{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .third{
+        .contain{
+            .main{
+                .card1{
+                    padding: 0;
+                    &__left{
+                        width: 100%;
+                        text-align: center;
+                    }
+                    &__right{
+                        width: 230px;
+                        margin: 0 auto;
+                    }
+                }
+                .card2{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

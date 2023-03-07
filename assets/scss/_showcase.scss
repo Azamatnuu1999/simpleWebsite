@@ -1,0 +1,104 @@
+header{
+    .contain{
+        .navbar{
+            display: flex;
+            &__checkbox{
+                display: none;
+            }
+            .links{
+                display: flex;
+                gap: 10px;
+                margin-left: auto;
+                font-weight: 600;
+                &__li{
+                    .active{
+                        color: #FF6464 !important;
+                    }
+                }
+            }
+            &__label{
+                display: none;
+                font-size: 18px;
+            }
+        }
+        .main{
+            margin: 50px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .text{
+                width: 60%;
+                &__h1{
+                    font-weight: 700;
+                }
+                &__button{
+                    background-color:  #FF6464;
+                    border: 1px solid #FF6464;
+                    color: white;
+                    padding: 5px 15px;
+                }
+                &__button:hover{
+                    background-color: white;
+                    transition-duration: .3s;
+                    transition-timing-function: linear;
+                    color: #FF6464;
+                    border: 1px solid #FF6464;
+                }
+            }
+            .right{
+                img{
+                    width: 90%;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    header{
+        .contain{
+            .main{
+                .text, .right{
+                    width: 100%;
+                    text-align: center;
+                }
+                .right{
+                    order: -1;
+                    img{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    header{
+        position: relative;
+    .contain{
+        .navbar{
+            &__label{
+                display: block;
+                margin-left: auto;
+            }
+            .links{
+                display: none;
+                transform: translateX(-100vh);
+            }
+            &__checkbox:checked ~ .links{
+                display: block;
+                position: fixed;
+                transform: translateX(-2vh);
+                background-color: white;
+                width: 40vh;
+                box-shadow: 0 0 9px grey;
+                padding: 20px;
+                top: 30px;
+                right: 5%;
+            }
+        }
+    }
+    }
+}

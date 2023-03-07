@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contain {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1350px;
+}
+
+@media (max-width: 400px) {
+  .contain {
+    width: 96%;
+  }
+}
+header .contain .navbar {
+  display: flex;
+}
+header .contain .navbar__checkbox {
+  display: none;
+}
+header .contain .navbar .links {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  font-weight: 600;
+}
+header .contain .navbar .links__li .active {
+  color: #FF6464 !important;
+}
+header .contain .navbar__label {
+  display: none;
+  font-size: 18px;
+}
+header .contain .main {
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header .contain .main .text {
+  width: 60%;
+}
+header .contain .main .text__h1 {
+  font-weight: 700;
+}
+header .contain .main .text__button {
+  background-color: #FF6464;
+  border: 1px solid #FF6464;
+  color: white;
+  padding: 5px 15px;
+}
+header .contain .main .text__button:hover {
+  background-color: white;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  color: #FF6464;
+  border: 1px solid #FF6464;
+}
+header .contain .main .right img {
+  width: 90%;
+  margin-left: auto;
+}
+
+@media (max-width: 600px) {
+  header .contain .main .text, header .contain .main .right {
+    width: 100%;
+    text-align: center;
+  }
+  header .contain .main .right {
+    order: -1;
+  }
+  header .contain .main .right img {
+    width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    position: relative;
+  }
+  header .contain .navbar__label {
+    display: block;
+    margin-left: auto;
+  }
+  header .contain .navbar .links {
+    display: none;
+    transform: translateX(-100vh);
+  }
+  header .contain .navbar__checkbox:checked ~ .links {
+    display: block;
+    position: fixed;
+    transform: translateX(-2vh);
+    background-color: white;
+    width: 40vh;
+    box-shadow: 0 0 9px grey;
+    padding: 20px;
+    top: 30px;
+    right: 5%;
+  }
+}
+.second {
+  background-color: #EDF7FA;
+}
+.second .contain .top {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.second .contain .top__p {
+  font-size: 18px;
+}
+.second .contain .top__a {
+  color: #00A8CC;
+}
+.second .contain .main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.second .contain .main .card1 {
+  width: 49%;
+  background-color: white;
+  padding: 20px;
+}
+.second .contain .main .card1__h3 {
+  font-weight: 700;
+}
+.second .contain .main .card1__p {
+  font-size: 14px;
+  color: grey;
+}
+.second .contain .main .card1__text {
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .second .contain .main .card1 {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+.third .contain {
+  padding: 20px 0;
+}
+.third .contain__p {
+  font-size: 18px;
+}
+.third .contain .main .card1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-bottom: 1px solid #E0E0E0;
+}
+.third .contain .main .card1__left {
+  width: 200px;
+}
+.third .contain .main .card1__left img {
+  height: 92%;
+}
+.third .contain .main .card1__right {
+  width: calc(100% - 230px);
+  padding-top: 0;
+}
+.third .contain .main .card1__right h3 {
+  font-weight: 600;
+  margin-top: 0;
+}
+.third .contain .main .card1__right p {
+  color: grey;
+}
+.third .contain .main .card1__right p span {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 2px 4px 4px 8px;
+}
+.third .contain .main .card1__right .text {
+  color: black;
+  font-size: 15px;
+}
+.third .contain .main .card2 {
+  width: 70%;
+  margin: 0 auto;
+}
+.third .contain .main .card2__right p {
+  color: black;
+  font-size: 16px;
+}
+.third .contain .main .card2__right p span {
+  background-color: #FF6464;
+  color: white;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 2px 4px 4px 8px;
+}
+.third .contain .main .card2__right .text {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .third .contain .main .card1 {
+    padding: 0;
+  }
+  .third .contain .main .card1__left {
+    width: 100%;
+    text-align: center;
+  }
+  .third .contain .main .card1__right {
+    width: 230px;
+    margin: 0 auto;
+  }
+  .third .contain .main .card2 {
+    width: 100%;
+  }
+}
+footer .contain {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+footer .contain .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 30px;
+  width: 200px;
+  margin: 0 auto;
+  padding-left: 0;
+  font-size: 28px;
+}
+footer .contain .links__bottom {
+  width: 100%;
+  font-size: 13px;
+  text-align: center;
+}
+footer .contain .links__bottom a {
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

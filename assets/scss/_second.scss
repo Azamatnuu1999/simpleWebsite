@@ -1,0 +1,52 @@
+.second{
+    background-color: #EDF7FA;
+    .contain{
+        .top{
+            display: flex;
+            padding: 10px 0;
+            justify-content: space-between;
+            padding-top: 20px;
+            &__p{
+                font-size: 18px;
+            }
+            &__a{
+                color: #00A8CC;
+            }
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-bottom: 20px;
+            .card1{
+                width: 49%;
+                background-color: white;
+                padding: 20px;
+                &__h3{
+                    font-weight: 700;
+                }
+                &__p{
+                    font-size: 14px;
+                    color: grey;
+                }
+                &__text{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    
+    .second{
+        .contain{
+            .main{
+                .card1{
+                    width: 100%;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
